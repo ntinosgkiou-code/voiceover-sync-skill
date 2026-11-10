@@ -3,6 +3,8 @@
 Turn a **voiceover** (ElevenLabs, any TTS or a recorded narration) plus a **silent screen recording** into
 one smooth onboarding video in which every click happens on the spoken word.
 
+![Results on a real onboarding video](docs/shot1_results.jpg)
+
 The audio is never stretched. The video is retimed, cut and crossfaded around it:
 
 - **Click-to-word sync**: each button press lands on its cue ("click **Create** Workspace").
@@ -17,6 +19,11 @@ The audio is never stretched. The video is retimed, cut and crossfaded around it
   per cue word.
 
 ## Install
+
+**One click:** get it on the [Agensi skills marketplace](https://agensi.io/skills/voiceover-sync-screen-recording-to-onboarding-video).
+It loads straight into Claude Code and comes with updates and support.
+
+**Manual:**
 
 ```bash
 git clone https://github.com/ntinosgkiou-code/voiceover-sync-skill ~/.claude/skills/voiceover-sync
@@ -56,6 +63,8 @@ Contiguous joins are hard cuts; all other joins are crossfades that keep the tim
 From a 151 s screen recording and a 100.5 s ElevenLabs voiceover, the skill produced a 101 s video with
 10/10 clicks on their words (each 0.2–0.4 s after the word starts), no freezes over 1.5 s, speeds
 between 0.55× and 1.71×, and −16.4 LUFS.
+
+![QA cue sheet: one frame per cue word](docs/shot2_cues.jpg)
 
 ## License
 
